@@ -50,6 +50,7 @@ public class Computadora {
 
     public void setPropietario(Propietario propietario) {
         this.propietario = propietario;
-        propietario.setComputadora(this);
+        propietario.addComputadora(this);
     }
 }
+

@@ -10,7 +10,7 @@ package principal11;
  */
 public class Principal11 {
     public static void main(String[] args) {
-        System.out.println("=== Ejercicio 11: Reproductor - Cancion - Artista ===");
+        System.out.println("=== Ejercicio 11: Cancion - Artista - Reproductor ===");
 
         Artista artista = new Artista("Michael Jackson", "Pop");
         Cancion cancion = new Cancion("Billie Jean");
@@ -18,9 +18,7 @@ public class Principal11 {
 
         Reproductor reproductor = new Reproductor();
         reproductor.reproducir(cancion);
-
-        System.out.println("Cancion: " + cancion.getTitulo());
-        System.out.println("Artista: " + cancion.getArtista().getNombre());
     }
 }
+
 

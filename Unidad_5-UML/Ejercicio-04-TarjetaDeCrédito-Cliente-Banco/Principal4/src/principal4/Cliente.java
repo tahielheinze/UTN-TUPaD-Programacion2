@@ -8,14 +8,18 @@ package principal4;
  *
  * @author tnhei
  */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cliente {
     private String nombre;
     private String dni;
-    private TarjetaDeCredito tarjetaDeCredito;
+    private List<TarjetaDeCredito> tarjetas;
 
     public Cliente(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
+        this.tarjetas = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -34,13 +38,14 @@ public class Cliente {
         this.dni = dni;
     }
 
-    public TarjetaDeCredito getTarjetaDeCredito() {
-        return tarjetaDeCredito;
+    public List<TarjetaDeCredito> getTarjetas() {
+        return tarjetas;
     }
 
-    public void setTarjetaDeCredito(TarjetaDeCredito tarjetaDeCredito) {
-        this.tarjetaDeCredito = tarjetaDeCredito;
+    public void addTarjetaDeCredito(TarjetaDeCredito tarjeta) {
+        this.tarjetas.add(tarjeta);
     }
 }
+
 
 

@@ -18,9 +18,7 @@ public class Principal12 {
 
         Calculadora calculadora = new Calculadora();
         calculadora.calcular(impuesto);
-
-        System.out.println("Contribuyente: " + contribuyente.getNombre());
-        System.out.println("CUIL: " + contribuyente.getCuil());
     }
 }
+
 

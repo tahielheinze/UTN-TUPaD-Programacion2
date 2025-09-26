@@ -8,6 +8,8 @@ package principal10;
  *
  * @author tnhei
  */
+import java.util.Date;
+
 public class Principal10 {
     public static void main(String[] args) {
         System.out.println("=== Ejercicio 10: CuentaBancaria - ClaveSeguridad - Titular ===");
@@ -17,7 +19,7 @@ public class Principal10 {
 
         cuenta.setTitular(titular);
         cuenta.getClaveSeguridad().setCodigo("ABC123");
-        cuenta.getClaveSeguridad().setUltimaModificacion("2025-09-26");
+        cuenta.getClaveSeguridad().setUltimaModificacion(new Date());
 
         System.out.println("Titular: " + titular.getNombre());
         System.out.println("DNI: " + titular.getDni());
@@ -26,4 +28,5 @@ public class Principal10 {
         System.out.println("Codigo de seguridad: " + cuenta.getClaveSeguridad().getCodigo());
     }
 }
+
 

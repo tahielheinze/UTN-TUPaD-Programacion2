@@ -20,7 +20,7 @@ public class Pasaporte {
     public Pasaporte(String numero, Date fechaEmision) {
         this.numero = numero;
         this.fechaEmision = fechaEmision;
-        this.foto = new Foto("", "");
+        this.foto = new Foto("", ""); // Composicion
     }
 
     public String getNumero() {
@@ -56,4 +56,5 @@ public class Pasaporte {
         titular.setPasaporte(this);
     }
 }
+
 

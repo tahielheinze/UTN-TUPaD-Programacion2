@@ -8,11 +8,13 @@ package principal10;
  *
  * @author tnhei
  */
+import java.util.Date;
+
 public class ClaveSeguridad {
     private String codigo;
-    private String ultimaModificacion;
+    private Date ultimaModificacion;
 
-    public ClaveSeguridad(String codigo, String ultimaModificacion) {
+    public ClaveSeguridad(String codigo, Date ultimaModificacion) {
         this.codigo = codigo;
         this.ultimaModificacion = ultimaModificacion;
     }
@@ -25,12 +27,13 @@ public class ClaveSeguridad {
         this.codigo = codigo;
     }
 
-    public String getUltimaModificacion() {
+    public Date getUltimaModificacion() {
         return ultimaModificacion;
     }
 
-    public void setUltimaModificacion(String ultimaModificacion) {
+    public void setUltimaModificacion(Date ultimaModificacion) {
         this.ultimaModificacion = ultimaModificacion;
     }
 }
+
 

@@ -8,22 +8,27 @@ package principal9;
  *
  * @author tnhei
  */
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
+
 public class CitaMedica {
-    private String fecha;
+    private Date fecha;
     private String hora;
-    private Paciente paciente;
+    private List<Paciente> pacientes;
     private Profesional profesional;
 
-    public CitaMedica(String fecha, String hora) {
+    public CitaMedica(Date fecha, String hora) {
         this.fecha = fecha;
         this.hora = hora;
+        this.pacientes = new ArrayList<>();
     }
 
-    public String getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
@@ -35,12 +40,12 @@ public class CitaMedica {
         this.hora = hora;
     }
 
-    public Paciente getPaciente() {
-        return paciente;
+    public List<Paciente> getPacientes() {
+        return pacientes;
     }
 
-    public void setPaciente(Paciente paciente) {
-        this.paciente = paciente;
+    public void addPaciente(Paciente paciente) {
+        this.pacientes.add(paciente);
     }
 
     public Profesional getProfesional() {
@@ -51,4 +56,3 @@ public class CitaMedica {
         this.profesional = profesional;
     }
 }
-

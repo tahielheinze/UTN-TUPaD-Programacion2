@@ -9,10 +9,11 @@ package principal14;
  * @author tnhei
  */
 public class EditorVideo {
-    public void exportar(String formato, Proyecto proyecto) {
+    public Render exportar(String formato, Proyecto proyecto) {
         Render render = new Render(formato);
         render.setProyecto(proyecto);
-        System.out.println("Exportando proyecto: " + proyecto.getNombre() + " en formato: " + formato);
+        return render;
     }
 }
+
 

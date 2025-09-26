@@ -8,22 +8,24 @@ package principal6;
  *
  * @author tnhei
  */
+import java.util.Date;
+
 public class Reserva {
-    private String fecha;
+    private Date fecha;
     private String hora;
     private Cliente cliente;
     private Mesa mesa;
 
-    public Reserva(String fecha, String hora) {
+    public Reserva(Date fecha, String hora) {
         this.fecha = fecha;
         this.hora = hora;
     }
 
-    public String getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
@@ -51,4 +53,5 @@ public class Reserva {
         this.mesa = mesa;
     }
 }
+
 

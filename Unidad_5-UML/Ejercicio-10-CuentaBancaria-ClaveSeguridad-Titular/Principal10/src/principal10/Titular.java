@@ -8,14 +8,18 @@ package principal10;
  *
  * @author tnhei
  */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Titular {
     private String nombre;
     private String dni;
-    private CuentaBancaria cuentaBancaria;
+    private List<CuentaBancaria> cuentasBancarias;
 
     public Titular(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
+        this.cuentasBancarias = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -34,12 +38,13 @@ public class Titular {
         this.dni = dni;
     }
 
-    public CuentaBancaria getCuentaBancaria() {
-        return cuentaBancaria;
+    public List<CuentaBancaria> getCuentasBancarias() {
+        return cuentasBancarias;
     }
 
-    public void setCuentaBancaria(CuentaBancaria cuentaBancaria) {
-        this.cuentaBancaria = cuentaBancaria;
+    public void addCuentaBancaria(CuentaBancaria cuentaBancaria) {
+        this.cuentasBancarias.add(cuentaBancaria);
     }
 }
+
 

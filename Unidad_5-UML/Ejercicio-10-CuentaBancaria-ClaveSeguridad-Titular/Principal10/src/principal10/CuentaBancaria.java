@@ -17,7 +17,7 @@ public class CuentaBancaria {
     public CuentaBancaria(String cbu, double saldo) {
         this.cbu = cbu;
         this.saldo = saldo;
-        this.claveSeguridad = new ClaveSeguridad("", ""); // Composicion
+        this.claveSeguridad = new ClaveSeguridad("", null); // Composicion
     }
 
     public String getCbu() {
@@ -50,7 +50,7 @@ public class CuentaBancaria {
 
     public void setTitular(Titular titular) {
         this.titular = titular;
-        titular.setCuentaBancaria(this);
+        titular.addCuentaBancaria(this);
     }
 }
 

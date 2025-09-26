@@ -9,10 +9,11 @@ package principal13;
  * @author tnhei
  */
 public class GeneradorQR {
-    public void generar(String valor, Usuario usuario) {
+    public CodigoQR generar(String valor, Usuario usuario) {
         CodigoQR codigoQR = new CodigoQR(valor);
         codigoQR.setUsuario(usuario);
-        System.out.println("Codigo QR generado para: " + usuario.getNombre());
+        return codigoQR;
     }
 }
+
 

@@ -8,22 +8,21 @@ package principal6;
  *
  * @author tnhei
  */
+import java.util.Date;
+
 public class Principal6 {
     public static void main(String[] args) {
-        System.out.println("=== Ejercicio 6: Reserva - Cliente - Mesa ===");
-
         Cliente cliente = new Cliente("Tahiel Heinze", "123456789");
         Mesa mesa = new Mesa(5, 4);
-        Reserva reserva = new Reserva("2025-12-25", "20:00");
+        Reserva reserva = new Reserva(new Date(), "20:00");
 
         reserva.setCliente(cliente);
         reserva.setMesa(mesa);
 
         System.out.println("Cliente: " + reserva.getCliente().getNombre());
-        System.out.println("Telefono: " + reserva.getCliente().getTelefono());
-        System.out.println("Fecha de reserva: " + reserva.getFecha());
-        System.out.println("Hora de reserva: " + reserva.getHora());
+        System.out.println("Fecha de Reserva: " + reserva.getFecha());
         System.out.println("Mesa: " + reserva.getMesa().getNumero());
     }
 }
+
 

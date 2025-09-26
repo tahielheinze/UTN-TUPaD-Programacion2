@@ -8,14 +8,18 @@ package principal5;
  *
  * @author tnhei
  */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Propietario {
     private String nombre;
     private String dni;
-    private Computadora computadora;
+    private List<Computadora> computadoras;
 
     public Propietario(String nombre, String dni) {
         this.nombre = nombre;
         this.dni = dni;
+        this.computadoras = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -34,12 +38,13 @@ public class Propietario {
         this.dni = dni;
     }
 
-    public Computadora getComputadora() {
-        return computadora;
+    public List<Computadora> getComputadoras() {
+        return computadoras;
     }
 
-    public void setComputadora(Computadora computadora) {
-        this.computadora = computadora;
+    public void addComputadora(Computadora computadora) {
+        this.computadoras.add(computadora);
     }
 }
+
 

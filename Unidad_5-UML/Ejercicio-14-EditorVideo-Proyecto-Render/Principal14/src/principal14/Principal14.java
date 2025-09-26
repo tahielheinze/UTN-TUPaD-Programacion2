@@ -10,14 +10,15 @@ package principal14;
  */
 public class Principal14 {
     public static void main(String[] args) {
-        System.out.println("=== Ejercicio 14: EditorVideo - Proyecto - Render ===");
+        System.out.println("=== Ejercicio 14: Proyecto - Render - EditorVideo ===");
 
-        Proyecto proyecto = new Proyecto("| UML en Java |", 10);
+        Proyecto proyecto = new Proyecto("Mi Proyecto", 10);
         EditorVideo editorVideo = new EditorVideo();
-        editorVideo.exportar("MP4", proyecto);
+        Render render = editorVideo.exportar("MP4", proyecto);
 
-        System.out.println("Proyecto: " + proyecto.getNombre());
-        System.out.println("Duracion: " + proyecto.getDuracionMin() + " minutos");
+        System.out.println("Proyecto: " + render.getProyecto().getNombre());
+        System.out.println("Formato: " + render.getFormato());
     }
 }
+
 

@@ -8,13 +8,15 @@ package principal4;
  *
  * @author tnhei
  */
+import java.util.Date;
+
 public class TarjetaDeCredito {
     private String numero;
-    private String fechaVencimiento;
+    private Date fechaVencimiento;
     private Cliente cliente;
     private Banco banco;
 
-    public TarjetaDeCredito(String numero, String fechaVencimiento) {
+    public TarjetaDeCredito(String numero, Date fechaVencimiento) {
         this.numero = numero;
         this.fechaVencimiento = fechaVencimiento;
     }
@@ -27,11 +29,11 @@ public class TarjetaDeCredito {
         this.numero = numero;
     }
 
-    public String getFechaVencimiento() {
+    public Date getFechaVencimiento() {
         return fechaVencimiento;
     }
 
-    public void setFechaVencimiento(String fechaVencimiento) {
+    public void setFechaVencimiento(Date fechaVencimiento) {
         this.fechaVencimiento = fechaVencimiento;
     }
 
@@ -41,7 +43,7 @@ public class TarjetaDeCredito {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
-        cliente.setTarjetaDeCredito(this);
+        cliente.addTarjetaDeCredito(this);
     }
 
     public Banco getBanco() {
