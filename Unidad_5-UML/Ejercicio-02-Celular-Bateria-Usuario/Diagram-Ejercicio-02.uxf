@@ -1,0 +1,20 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>
+</help_text><element><id>UMLClass</id><coordinates><x>400</x><y>120</y><w>210</w><h>80</h></coordinates><panel_attributes>Celular
+--
+- imei : String
+- marca : String
+- modelo : String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>130</y><w>210</w><h>70</h></coordinates><panel_attributes>Bateria
+--
+- modelo : String
+- capacidad : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>310</y><w>210</w><h>70</h></coordinates><panel_attributes>Usuario
+--
+- nombre : String
+- dni : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>150</y><w>210</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+m2=1
+Agregación </panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>190</y><w>110</w><h>140</h></coordinates><panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=1
+  Asociación
+  bidireccional</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element></diagram>

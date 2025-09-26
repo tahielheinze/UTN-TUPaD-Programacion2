@@ -1,0 +1,19 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>
+</help_text><element><id>UMLClass</id><coordinates><x>790</x><y>170</y><w>210</w><h>70</h></coordinates><panel_attributes>ClaveSeguridad 
+--
+  - codigo : String
+  - ultimaModificacion : Date</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>370</y><w>210</w><h>60</h></coordinates><panel_attributes>Titular 
+--
+  - nombre : String
+  - dni : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>190</y><w>270</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+Composición
+m1=1
+m2=1
+</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>230</y><w>110</w><h>160</h></coordinates><panel_attributes>lt=&lt;-&gt;
+ Asociación 
+ bidireccional 
+m1=1
+m2=n</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>170</y><w>210</w><h>70</h></coordinates><panel_attributes>CuentaBancaria
+--
+  - cbu : String
+  - saldo : double</panel_attributes><additional_attributes></additional_attributes></element></diagram>
